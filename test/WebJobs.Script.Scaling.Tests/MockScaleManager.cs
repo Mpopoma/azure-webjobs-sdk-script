@@ -175,14 +175,14 @@ namespace Microsoft.Azure.WebJobs.Script.Scaling.Tests
             return await base.RequestAddWorker(activityId, workers, manager, force);
         }
 
-        protected override async Task RequestRemoveWorker(string activityId, IWorkerInfo manager, IWorkerInfo toRemove)
+        protected override async Task<bool> RequestRemoveWorker(string activityId, IWorkerInfo manager, IWorkerInfo toRemove)
         {
-            await MockRequestRemoveWorker(activityId, manager, toRemove);
+            return await MockRequestRemoveWorker(activityId, manager, toRemove);
         }
 
-        public virtual async Task MockRequestRemoveWorker(string activityId, IWorkerInfo manager, IWorkerInfo toRemove)
+        public virtual async Task<bool> MockRequestRemoveWorker(string activityId, IWorkerInfo manager, IWorkerInfo toRemove)
         {
-            await base.RequestRemoveWorker(activityId, manager, toRemove);
+            return await base.RequestRemoveWorker(activityId, manager, toRemove);
         }
 
         public void VerifyAll()
