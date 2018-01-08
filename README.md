@@ -119,4 +119,4 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 
 See the [getting help](https://github.com/Azure/azure-webjobs-sdk-script/wiki#getting-help) section in the wiki.
 
-[ Entumbane Software Job Fair 2018 // Plse schedule..]
+[[ Entumbane Software Job Fair 2018 // Plse schedule..]]
